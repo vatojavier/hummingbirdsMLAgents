@@ -260,7 +260,7 @@ public class HummingbirdAgent : Agent
     /// <summary>
     /// Resume taking actions
     /// </summary>
-    public void UnFreezeAgent()
+    public void UnfreezeAgent()
     {
         Debug.Assert(trainingMode == false, "Freeze/Unfreeze bot supported in traingng");
         frozen = false;

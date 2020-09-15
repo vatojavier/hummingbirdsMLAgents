@@ -55,6 +55,9 @@ public class FlowerArea : MonoBehaviour
         flowerPlants = new List<GameObject>();
         nectarFlowerDictionary = new Dictionary<Collider, Flower>();
         Flowers = new List<Flower>();
+
+        //Find all flowers that are children of this gameobject/transform
+        FindChildFlowers(transform);
     }
 
     /// <summary>
@@ -62,8 +65,7 @@ public class FlowerArea : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        //Find all flowers that are children of this gameobject/transform
-        FindChildFlowers(transform);
+        
         
     }
 
